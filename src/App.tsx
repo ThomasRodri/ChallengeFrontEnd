@@ -1,14 +1,15 @@
-import Cabecalho from "./routes/components/Cabecalho"
+import React from 'react';
+import { Outlet } from 'react-router-dom'; // Importar o Outlet para renderizar as rotas filhas
 
-
-function App() {
-  
-
+const App: React.FC = () => {
   return (
-    <>
-      <Cabecalho/>
-    </>
-  )
-}
+    <div>
+      
+     
+      <Outlet /> {/* Aqui as rotas filhas, como Home, serão renderizadas */}
 
-export default App
+    </div>
+  );
+};
+
+export default App;
