@@ -1,4 +1,6 @@
+// src/routes/components/Cabecalho.tsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Usar o Link do React Router Dom
 
 const Cabecalho: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Cabecalho: React.FC = () => {
         <nav>
           <ul>
             <li className="login">
-              <a href="./login.html" id="login-button">Login</a>
+              <Link to="/login" id="login-button">Login</Link> {/* Usando o Link para a rota de login */}
             </li>
           </ul>
         </nav>
