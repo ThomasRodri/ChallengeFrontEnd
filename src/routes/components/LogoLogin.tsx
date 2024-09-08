@@ -3,9 +3,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LogoImage = styled.img`
-  width: 50%; /* Ajuste para largura relativa */
+  width: 150px; /* Ajuste para o tamanho fixo, baseado na proporção que parece na imagem */
   height: auto;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto; /* Centralizar a imagem */
+  padding-bottom: 1rem;
 `;
 
 interface LogoProps {
@@ -18,3 +20,4 @@ const LogoLogin: React.FC<LogoProps> = ({ src, alt }) => {
 };
 
 export default LogoLogin;
+

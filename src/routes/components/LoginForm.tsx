@@ -1,6 +1,7 @@
 // src/components/LoginForm.tsx
 import React from 'react';
 import styled from 'styled-components';
+import LogoLogin from './LogoLogin'; // Importa o componente de logo
 
 const FormContainer = styled.div`
   background: linear-gradient(to bottom, #0082c8, #00578a);
@@ -62,6 +63,9 @@ const Button = styled.button`
 const LoginForm: React.FC = () => {
   return (
     <FormContainer>
+      {/* Adicionando o Logo dentro do formulário */}
+      <LogoLogin src="porto.png" alt="Logo Porto" /> 
+      
       <Title>Iniciar sessão</Title>
       <InputGroup>
         <Input type="text" placeholder="Email ou CPF" />
@@ -70,9 +74,9 @@ const LoginForm: React.FC = () => {
         <Input type="password" placeholder="Senha" />
       </InputGroup>
       <Link href="#">Esqueci minha senha</Link>
-      <Link href="./cadastro.html">Não tem cadastro? Crie um!</Link>
+      <Link href="/Cadastro">Não tem cadastro? Crie um!</Link>
       <Button type="submit">Entrar</Button>
-      <Button onClick={() => window.location.href = './index.html'}>
+      <Button onClick={() => window.location.href = '/'}>
         Voltar à página principal
       </Button>
     </FormContainer>

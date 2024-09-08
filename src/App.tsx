@@ -6,7 +6,7 @@ import Cabecalho from './routes/components/Cabecalho'; // Importar o cabeçalho
 const App: React.FC = () => {
   return (
     <div>
-      <Cabecalho /> {/* O cabeçalho estará presente em todas as páginas */}
+      
       <Outlet /> {/* Renderizará o conteúdo das rotas filhas */}
     </div>
   );
