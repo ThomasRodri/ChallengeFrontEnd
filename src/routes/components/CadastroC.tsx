@@ -19,7 +19,7 @@ const Container = styled.section`
 `;
 
 const Logo = styled.img`
-  width: 100%;
+  width: 65%;
   border-radius: 8px 8px 0 0;
   margin-bottom: 20px;
 `;
@@ -51,7 +51,7 @@ const InputWrapper = styled.div`
 const CadastroC: React.FC = () => {
   return (
     <Container>
-      <Logo src="./img/porto.png" alt="Logo" />
+      <Logo src="porto.png" alt="Logo" />
       <Heading>Inicie seu Cadastro!</Heading>
       <InputWrapper>
         <InputField placeholder="Nome completo" type="text" className="nome-text" />

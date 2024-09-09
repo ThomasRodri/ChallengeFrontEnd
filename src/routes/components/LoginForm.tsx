@@ -1,7 +1,7 @@
-// src/components/LoginForm.tsx
 import React from 'react';
 import styled from 'styled-components';
-import LogoLogin from './LogoLogin'; // Importa o componente de logo
+import LogoLogin from './LogoLogin';
+
 
 const FormContainer = styled.div`
   background: linear-gradient(to bottom, #0082c8, #00578a);
@@ -74,7 +74,8 @@ const LoginForm: React.FC = () => {
         <Input type="password" placeholder="Senha" />
       </InputGroup>
       <Link href="#">Esqueci minha senha</Link>
-      <Link href="/Cadastro">Não tem cadastro? Crie um!</Link>
+      {/* Corrigindo o caminho para a página de cadastro */}
+      <Link href="/cadastro">Não tem cadastro? Crie um!</Link>
       <Button type="submit">Entrar</Button>
       <Button onClick={() => window.location.href = '/'}>
         Voltar à página principal

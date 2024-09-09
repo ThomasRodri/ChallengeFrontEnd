@@ -1,7 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import { Outlet } from 'react-router-dom'; // Para renderizar as rotas filhas
-import Cabecalho from './routes/components/Cabecalho'; // Importar o cabeçalho
+ // Importar o cabeçalho
 
 const App: React.FC = () => {
   return (
