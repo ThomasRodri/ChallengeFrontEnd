@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Footer = styled.footer`
   padding: 20px;
-  background-color: #333;
+  background-color: black;
   text-align: center;
   color: white;
 `;
@@ -15,7 +15,7 @@ const Logo = styled.img`
 const Rodape: React.FC = () => {
   return (
     <Footer>
-      <Logo src="./img/imagem.white porto.png" alt="logo branco da porto" />
+      <Logo src="imagem.white porto.png" alt="" />
     </Footer>
   );
 };

@@ -30,7 +30,7 @@ const Cabecalho: React.FC = () => {
   return (
     <Header>
       <a href="https://www.portoseguro.com.br" target="_blank" rel="noopener noreferrer">
-        <Logo src="./img/porto.png" alt="logo da porto" />
+        <Logo src="porto.png" alt="logo da porto" />
       </a>
       <nav>
         <LoginButton to="/login">Login</LoginButton>
