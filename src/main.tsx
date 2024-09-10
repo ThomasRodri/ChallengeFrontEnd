@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       path:'/cadastro',
       element:<Cadastro/>
     },{
-      path:'/Botpage',
+      path:'/botpage',
       element:<BotPage/>
     }
     ]
