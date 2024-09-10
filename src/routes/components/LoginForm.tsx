@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import LogoLogin from './LogoLogin'; // Importa o componente de logo
+import { useNavigate } from 'react-router-dom';
+import LogoLogin from './LogoLogin';
 
 const FormContainer = styled.div`
   background: linear-gradient(to bottom, #0082c8, #00578a);
@@ -60,9 +61,15 @@ const Button = styled.button`
 `;
 
 const LoginForm: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Navega para a página "/botpage" ao clicar em "Entrar"
+    navigate('/botpage');
+  };
+
   return (
     <FormContainer>
-      {/* Adicionando o Logo dentro do formulário */}
       <LogoLogin src="porto.png" alt="Logo Porto" /> 
       
       <Title>Iniciar sessão</Title>
@@ -72,9 +79,10 @@ const LoginForm: React.FC = () => {
       <InputGroup>
         <Input type="password" placeholder="Senha" />
       </InputGroup>
+      
       <Link href="/cadastro">Não tem cadastro? Crie um!</Link>
-      <Button type="submit">Entrar</Button>
-      <Button onClick={() => window.location.href = '/'}>
+      <Button type="button" onClick={handleLogin}>Entrar</Button>
+      <Button onClick={() => navigate('/')}>
         Voltar à página principal
       </Button>
     </FormContainer>
