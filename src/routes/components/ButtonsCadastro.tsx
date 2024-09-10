@@ -30,7 +30,7 @@ export const ButtonsCadastro: React.FC = () => {
   return (
     <>
       <Button type="submit">Enviar as Informações</Button>
-      <BackButton type="button" onClick={() => window.location.href = 'login.html'}>
+      <BackButton type="button" onClick={() => window.location.href = '/login'}>
         Voltar
       </BackButton>
     </>
