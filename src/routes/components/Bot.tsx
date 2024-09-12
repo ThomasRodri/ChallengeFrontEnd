@@ -5,12 +5,13 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;  /* Centraliza verticalmente */
+  align-items: center;       /* Centraliza horizontalmente */
   text-align: center;
   width: 100%;
-  max-width: 800px;
-  padding: 20px;
+  height: 100vh;             /* Ocupa a altura total da tela */
   box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
 `;
 
 const Header = styled.header`
@@ -36,6 +37,7 @@ const LogoutButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
 
   &:hover {
     background-color: #000080;
@@ -68,6 +70,8 @@ const MessageBox = styled.div`
   max-width: 600px;
   box-sizing: border-box;
   margin: 20px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
 
   @media (max-width: 600px) {
     font-size: 20px;
@@ -89,7 +93,7 @@ const BotPage: React.FC = () => {
         </LogoutButton>
       </Header>
       <Container>
-        <Logo src="img/porto.png" alt="Porto Seguro" />
+        <Logo src="porto.png" alt="Porto Seguro" />
         <MessageBox>
           Acesso ao bot indisponível.
         </MessageBox>

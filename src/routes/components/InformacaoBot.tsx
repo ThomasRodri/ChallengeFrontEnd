@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const GlobalStyle = styled.div`
+  font-family: Arial, sans-serif;
+`;
+
 const Container = styled.div`
   background-color: #fff;
   padding: 20px;
@@ -50,14 +54,26 @@ const Button = styled.a`
   }
 `;
 
-const CarSection = styled.div`
-  width: 45%;
-  text-align: center;
+const ImageRow = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 20px;
+`;
+
+const WomanImage = styled.img`
+  width: 15%;
+  height: auto;
+`;
+
+const RobotImage = styled.img`
+  width: 15%;
+  height: auto;
 `;
 
 const CarImageContainer = styled.div`
   position: relative;
+  width: 30%;
 `;
 
 const Gosma = styled.img`
@@ -73,47 +89,32 @@ const Onix = styled.img`
   height: auto;
 `;
 
-const RobotSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-`;
-
-const WomanImage = styled.img`
-  width: 15%;
-  height: auto;
-`;
-
-const RobotImage = styled.img`
-  width: 10%;
-  height: auto;
-`;
-
 const InformacaoBot: React.FC = () => {
   return (
-    <Container>
-      <TextSection>
-        <Label>BRASIL</Label>
-        <Heading>Conserto automobilístico</Heading>
-        <Paragraph>+100 OFICINAS</Paragraph>
-      </TextSection>
-      <RobotSection>
-        <WomanImage src="mulher.png" alt="Mulher" />
-        <RobotImage src="robo.png" alt="Robozinho" />
-      </RobotSection>
-      <CarSection>
-        <CarImageContainer>
-          <Gosma src="vector.png" alt="gosma" />
-          <Onix src="branco-summit-novo-onix.png" alt="carro" />
-        </CarImageContainer>
-      </CarSection>
-      <Heading>Atendimento via IA</Heading>
-      <Paragraph>
-        Não deixe passar a oportunidade de ser atendido pelo <strong>Visinho!</strong> Nossa IA focada em lhe guiar durante todo o processo.
-      </Paragraph>
-      <Button href="/login">COMECE JÁ!</Button>
-    </Container>
+    <GlobalStyle>
+      <Container>
+        <TextSection>
+          <Label>BRASIL</Label>
+          <Heading>Conserto automobilístico</Heading>
+          <Paragraph>+100 OFICINAS</Paragraph>
+        </TextSection>
+
+        <ImageRow>
+          <WomanImage src="mulher.png" alt="Mulher" />
+          <RobotImage src="robo.png" alt="Robozinho" />
+          <CarImageContainer>
+            <Gosma src="vector.png" alt="gosma" />
+            <Onix src="branco-summit-novo-onix.png" alt="carro" />
+          </CarImageContainer>
+        </ImageRow>
+
+        <Heading>Atendimento via IA</Heading>
+        <Paragraph>
+          Não deixe passar a oportunidade de ser atendido pelo <strong>Visinho!</strong> Nossa IA focada em lhe guiar durante todo o processo.
+        </Paragraph>
+        <Button href="/login">COMECE JÁ!</Button>
+      </Container>
+    </GlobalStyle>
   );
 };
 

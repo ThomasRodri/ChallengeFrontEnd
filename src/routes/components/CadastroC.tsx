@@ -16,6 +16,7 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: Arial, sans-serif; /* Fonte sem serifa */
 `;
 
 const Logo = styled.img`
@@ -28,6 +29,7 @@ const Heading = styled.h2`
   margin-bottom: 20px;
   font-size: 1.5em;
   color: #333;
+  font-family: Arial, sans-serif; /* Fonte sem serifa */
 `;
 
 const InputWrapper = styled.div`
@@ -40,7 +42,7 @@ const InputWrapper = styled.div`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fonte sem serifa */
 
     &::placeholder {
       color: #888;

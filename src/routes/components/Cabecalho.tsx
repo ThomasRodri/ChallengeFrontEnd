@@ -8,10 +8,11 @@ const Header = styled.header`
   align-items: center;
   padding: 20px;
   background-color: #f2f2f2;
+  font-family: Arial, sans-serif; /* Fonte sem serifa */
 `;
 
 const Logo = styled.img`
-  width: 100px;
+  width: 20%;
 `;
 
 const LoginButton = styled(Link)`
@@ -20,6 +21,7 @@ const LoginButton = styled(Link)`
   color: white;
   border-radius: 4px;
   text-decoration: none;
+  font-family: Arial, sans-serif; /* Fonte sem serifa */
 
   &:hover {
     background-color: #0056b3;
