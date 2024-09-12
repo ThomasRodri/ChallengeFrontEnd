@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Estilizando os componentes com styled-components
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centraliza verticalmente */
-  align-items: center;       /* Centraliza horizontalmente */
+  justify-content: center;  
+  align-items: center;      
   text-align: center;
   width: 100%;
-  height: 100vh;             /* Ocupa a altura total da tela */
+  height: 100vh;             
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
+  font-family: 'Arial', sans-serif; 
 `;
 
 const Header = styled.header`
@@ -37,7 +37,7 @@ const LogoutButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
+  font-family: 'Arial', sans-serif;
 
   &:hover {
     background-color: #000080;
@@ -71,7 +71,7 @@ const MessageBox = styled.div`
   box-sizing: border-box;
   margin: 20px 0;
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Fonte sem serifa */
+  font-family: 'Arial', sans-serif; 
 
   @media (max-width: 600px) {
     font-size: 20px;

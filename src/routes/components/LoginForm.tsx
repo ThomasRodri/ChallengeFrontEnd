@@ -11,12 +11,14 @@ const FormContainer = styled.div`
   max-width: 30rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif; 
 `;
 
 const Title = styled.h2`
   font-size: 1.5rem;
   color: white;
   margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif; 
 `;
 
 const InputGroup = styled.div`
@@ -30,6 +32,7 @@ const Input = styled.input`
   margin-top: 0.5rem;
   border: none;
   border-radius: 0.5rem;
+  font-family: Arial, sans-serif; 
 `;
 
 const Link = styled.a`
@@ -37,6 +40,7 @@ const Link = styled.a`
   text-decoration: none;
   display: block;
   margin-top: 1rem;
+  font-family: Arial, sans-serif; 
 
   &:hover {
     text-decoration: underline;
@@ -54,6 +58,7 @@ const Button = styled.button`
   margin-top: 1rem;
   width: 90%;
   font-size: 1rem;
+  font-family: Arial, sans-serif; 
 
   &:hover {
     background-color: #004a70;
@@ -64,7 +69,6 @@ const LoginForm: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Navega para a página "/botpage" ao clicar em "Entrar"
     navigate('/botpage');
   };
 

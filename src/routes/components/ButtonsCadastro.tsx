@@ -11,7 +11,7 @@ const Button = styled.button`
   box-sizing: border-box;
   color: white;
   background-color: #007bff;
-  font-family: sans-serif; /* Fonte sem serifa */
+  font-family: sans-serif; 
 
   &:hover {
     background-color: #0056b3;

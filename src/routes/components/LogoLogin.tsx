@@ -1,13 +1,14 @@
-// src/components/LogoLogin.tsx
+
 import React from 'react';
 import styled from 'styled-components';
 
 const LogoImage = styled.img`
-  width: 150px; /* Ajuste para o tamanho fixo, baseado na proporção que parece na imagem */
+  width: 150px; 
   height: auto;
   display: block;
-  margin: 0 auto; /* Centralizar a imagem */
+  margin: 0 auto; 
   padding-bottom: 1rem;
+  font-family: Arial, sans-serif; 
 `;
 
 interface LogoProps {
@@ -20,4 +21,3 @@ const LogoLogin: React.FC<LogoProps> = ({ src, alt }) => {
 };
 
 export default LogoLogin;
-
