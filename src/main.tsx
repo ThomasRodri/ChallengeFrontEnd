@@ -11,25 +11,7 @@ import Error from './routes/Error/index.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
-  {
-    path:'/',
-    element:<App/>,
-    errorElement:<Error/>,
-    children:[{
-      path:'/',
-      element:<Home/>
-    },{
-      path:'/login',
-      element:<Login/>
-    },{
-      path:'/cadastro',
-      element:<Cadastro/>
-    },{
-      path:'/botpage',
-      element:<BotPage/>
-    }
-    ]
-  }
+  
 ])
 
 createRoot(document.getElementById('root')!).render(
