@@ -8,6 +8,7 @@ import Login from './routes/Login/index.tsx'
 import Cadastro from './routes/Cadastro/index.tsx'
 import BotPage from './routes/BotPage/index.tsx'
 import Error from './routes/Error/index.tsx' 
+import IntegrantesPage from './routes/IntegrantesPage/index.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -27,6 +28,9 @@ const router = createBrowserRouter([
     },{
       path:'/botpage',
       element:<BotPage/>
+    },{
+      path:'/integrantespage',
+      element:<IntegrantesPage/>
     }
     ]
   }
