@@ -26,19 +26,19 @@ const Integrantes: React.FC = () => {
   return (
     <Container>
       <ImageWrapper>
-        <Image src="thomas.jpg" alt="Foto de um integrante" />
+        <Image src="thomas.jpg" alt="Foto do thomas" />
         <Paragraph>Nome: Thomas Rodrigues</Paragraph>
         <Paragraph>RM: 558042</Paragraph>
       </ImageWrapper>
 
       <ImageWrapper>
-        <Image src="miguel.jpg" alt="Foto de um integrante" />
+        <Image src="miguel.jpg" alt="Foto do miguel" />
         <Paragraph>Nome: Miguel Barros Ramos</Paragraph>
         <Paragraph>RM: 556652</Paragraph>
       </ImageWrapper>
 
       <ImageWrapper>
-        <Image src="pedro.jpg" alt="Foto de um integrante" />
+        <Image src="pedro.jpg" alt="Foto do pedro" />
         <Paragraph>Nome: Pedi Valentim Merise</Paragraph>
         <Paragraph>RM: 556826</Paragraph>
       </ImageWrapper>
