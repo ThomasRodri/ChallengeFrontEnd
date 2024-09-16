@@ -27,8 +27,8 @@ const Integrantes: React.FC = () => {
     <Container>
       <ImageWrapper>
         <Image src="https://via.placeholder.com/150" alt="Foto de um integrante" />
-        <Paragraph>Parágrafo 1 - Imagem 1</Paragraph>
-        <Paragraph>Parágrafo 2 - Imagem 1</Paragraph>
+        <Paragraph>Nome: Thomas Rodrigues</Paragraph>
+        <Paragraph>RM: 558042</Paragraph>
       </ImageWrapper>
 
       <ImageWrapper>
