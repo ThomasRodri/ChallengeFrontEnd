@@ -39,7 +39,7 @@ const Integrantes: React.FC = () => {
 
       <ImageWrapper>
         <Image src="pedro.jpg" alt="Foto do pedro" />
-        <Paragraph>Nome: Pedi Valentim Merise</Paragraph>
+        <Paragraph>Nome: Pedro Valentim Merise</Paragraph>
         <Paragraph>RM: 556826</Paragraph>
       </ImageWrapper>
     </Container>
